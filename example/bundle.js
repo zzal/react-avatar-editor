@@ -1,0 +1,1 @@
+console.error("Error: Parsing file /Users/mschwoerer/Develop/react-avatar-editor/node_modules/react-avatar-editor/AvatarEditor.js: Unexpected token (220:15)")
