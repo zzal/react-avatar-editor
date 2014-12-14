@@ -38,4 +38,3 @@ function createEditor(width, height, border) {
 }
 
 React.render(createEditor(250, 250, 25), document.getElementById('example1'));
-React.render(createEditor(500, 350, 50), document.getElementById('example2'));
