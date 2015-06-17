@@ -1,10 +1,10 @@
 {
-    "name": "react-avatar-editor-examples",
-    "version": "0.4.2",
-    "description": "Facebook like, avatar / profile picture component. Resize and crop your uploaded image using a clear user interface.",
-    "main": "example/app.js",
+    "name": "react-avatar-editor",
+    "version": "1.1.1",
+    "description": "Facebook like avatar / profile picture component. Resize and crop your uploaded image using a intutive user interface.",
+    "main": "index.js",
     "scripts": {
-        "dev": "http-server . & watchify -t reactify example/app.js -o example/bundle.js -v & wait"
+        "start": "watchify example/app.js -o example/bundle.js -v"
     },
     "author": {
         "name": "Moritz Schwoerer",
@@ -15,14 +15,19 @@
         "url": "git://github.com/mosch/react-avatar-editor.git"
     },
     "license": "MIT",
-    "dependencies": {
-        "react": "^0.12.1",
-        "react-avatar-editor": "^0.4.x"
-    },
+    "keywords": [
+        "react-component",
+        "reactjs",
+        "react"
+    ],
     "devDependencies": {
+        "react": "0.13.x",
         "http-server": "^0.7.4",
         "watchify": "^2.1.1",
         "reactify": "0.17.1"
+    },
+    "browserify": {
+        "transform": [["reactify", { "es6": true }]]
     }
 }
 
