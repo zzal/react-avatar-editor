@@ -42,6 +42,7 @@ module.exports = MyEditor;
 | color                  | Number[] | The color of the cropping border, in the form: [red (0-255), green (0-255), blue (0-255), alpha (0.0-1.0)]
 | style                  | Object   | Styles for the canvas element
 | scale                  | Number   | The scale of the image. You can use this to add your own resizing slider.
+| useDropFile            | bool     | Whether it should accept file drop or not (Will obsolete onDropFile prop).
 | onDropFile(event)      | function | Invoked when user drops a file (or more) onto the canvas. Does not perform any further check.
 | onLoadSuccess(imgInfo) | function | Invoked when an image (whether passed by props or dropped) load succeeds.
 | onLoadFailure(event)   | function | Invoked when an image (whether passed by props or dropped) load fails.
