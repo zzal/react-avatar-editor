@@ -389,9 +389,9 @@ var AvatarEditor = React.createClass({
         }
 
         if (e.dataTransfer && e.dataTransfer.files.length) {
-            this.props.onDropFile(e);
             let reader = new FileReader();
             let file = e.dataTransfer.files[0];
+            this.props.onDropFile(e, file);
             reader.onload = (e) => this.loadImage(e.target.result);
             reader.readAsDataURL(file);
         }
